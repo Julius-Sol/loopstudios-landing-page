@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
@@ -16,17 +19,21 @@
   </style>
 </head>
 <body>
+  <div class="nav-mobile-background hidden"></div>
   <div class="hero"></div>
   <div class="nav-container">
-    <img src="./images/logo.svg" alt="Logo" class="nav-image">
-    <img src="./images/icon-hamburger.svg" alt="Hamburger" class="nav-hamburger">
-    <nav>
+    <div class="nav-img-container">
+      <img src="./images/logo.svg" alt="Logo" class="nav-image">
+      <img src="./images/icon-hamburger.svg" alt="Hamburger" class="nav-hamburger">
+      <img src="./images/icon-close.svg" alt="close" class="nav-close hidden">
+    </div>
+    <nav class="hidden">
       <ul>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li>Support</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
       </ul>
     </nav>
   </div>
@@ -65,4 +72,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="./main.js"></script>
 </html>

@@ -1,7 +1,30 @@
+:root{
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
 *{
   box-sizing: border-box;
   padding:0;
   margin: 0;
+}
+
+body{
+  font-size: 15px;
+}
+
+.hidden{
+  display: none;
+}
+
+.nav-mobile-background{
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 .hero{
@@ -13,14 +36,41 @@
   width: 750px;
   height: 750px;
   z-index: -20;
-  
+}
+
+
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+nav{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-top: 8rem;
+}
+
+nav ul li{
+  list-style: none;
+  margin-top: 2rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
 }
 
 .nav-container{
+  position: relative;
+  padding: 2rem 2rem;
+  z-index: 3;
+}
+
+.nav-img-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
 }
 
 .nav-image{
@@ -31,15 +81,6 @@
   width: auto;
   height: .8rem;
 }
-
-nav{
-  display: none;
-}
-
-nav ul li{
-  list-style: none;
-}
-
 
 
 @media screen and (min-width:500px){
