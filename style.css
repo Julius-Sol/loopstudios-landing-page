@@ -88,5 +88,41 @@ nav a{
     background-image: url(./images/desktop/image-hero.jpg);
     width: 100vw;
     height: 650px;
+  } 
+}
+
+
+@media screen and (min-width:700px){
+  .nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
+  
+  nav{
+    font-family: 'Alata', sans-serif;
+    text-transform: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-top: 0rem;
+  }
+
+  nav ul{
+    display: flex;
+  }
+  
+  nav ul li{
+    margin-top: 0rem;
+    padding: 0 .5rem;
+  }
+
+  .nav-hamburger{
+    display: none;
+  }
+
+  nav.hidden{
+    display: block;
+  }
+
 }
