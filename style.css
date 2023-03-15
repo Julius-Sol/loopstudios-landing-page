@@ -8,12 +8,12 @@ font-family: 'Josefin Sans', sans-serif; */
 
 *{
   box-sizing: border-box;
-  padding:0;
-  margin: 0;
 }
 
 body{
   font-size: 15px;
+  padding:0;
+  margin: 0;
 }
 
 .hidden{
@@ -44,7 +44,6 @@ body{
   "nav"
   "htext";
   grid-template-rows: 14rem;
-
 }
 
 .hero-text{
@@ -107,6 +106,36 @@ nav a{
 .nav-hamburger{
   width: auto;
   height: .8rem;
+}
+
+.virtual-img-cont img{
+  max-height:100%; 
+  max-width:100%;
+}
+.virtual-img-cont{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.first-panel{
+  margin-top: 8rem;
+}
+
+.first-panel-text-cont{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.first-panel-text-cont h1{
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.first-panel-text-cont p{
+  color: var(--Very-Dark-Gray);
 }
 
 
