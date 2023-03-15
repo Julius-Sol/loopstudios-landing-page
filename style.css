@@ -38,6 +38,32 @@ body{
   z-index: -20;
 }
 
+.top-grid-cont{
+  display: grid;
+  grid:
+  "nav nav"
+  "htext .";
+  grid-template-rows: 14rem;
+
+}
+
+.hero-text{
+  grid-area: htext;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 auto;
+  width: 80%;
+  border: white solid 1px;
+  padding: 1rem 2rem;
+}
+
 
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
@@ -62,6 +88,7 @@ nav a{
 }
 
 .nav-container{
+  grid-area: nav;
   position: relative;
   padding: 2rem 2rem;
   z-index: 3;
