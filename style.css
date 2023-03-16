@@ -22,7 +22,7 @@ body{
 }
 
 .nav-mobile-background{
-  position: absolute;
+  position: fixed;
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -74,7 +74,7 @@ body{
       Navigation
 ***********************/
 
-nav{
+.nav-top{
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -83,7 +83,7 @@ nav{
   margin-top: 8rem;
 }
 
-nav ul li{
+.nav-top ul li{
   list-style: none;
   margin-top: 2rem;
 }
@@ -161,7 +161,7 @@ nav a{
 
 .second-panel{
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   text-align: center;
 }
 
@@ -257,6 +257,35 @@ nav a{
   padding:  .5rem 3rem;
   margin-top: 2rem;
 }
+
+.footer-end{
+  padding-top: 3rem;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer-end nav{
+  margin: 2rem 0 3rem;
+}
+
+.footer-end nav ul li{
+  margin-top: 1rem;
+}
+
+.footer-logo{
+  height: 20px;
+}
+
+.social-cont img{
+  margin: 0 .5rem;
+}
+
+.copyright-text{
+  color: var(--Very-Dark-Gray);
+  margin: 1rem 0;
+}
+
 
 
 @media screen and (min-width:500px){
