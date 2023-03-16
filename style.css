@@ -8,12 +8,13 @@ font-family: 'Josefin Sans', sans-serif; */
 
 *{
   box-sizing: border-box;
+  padding:0;
+  margin: 0;
 }
 
 body{
   font-size: 15px;
-  padding:0;
-  margin: 0;
+
 }
 
 .hidden{
@@ -122,20 +123,81 @@ nav a{
 }
 
 .first-panel-text-cont{
-  width: 70%;
   margin: 0 auto;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: white;
+  padding: 3rem;
 }
 
 .first-panel-text-cont h1{
   text-transform: uppercase;
   font-weight: 100;
-  letter-spacing: 2px;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
 }
 
 .first-panel-text-cont p{
   color: var(--Very-Dark-Gray);
+  line-height: 1.5em;
+  font-size: .9rem;
+}
+
+.second-panel{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.night-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-night-arcade.jpg);
+}
+
+.earth-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-deep-earth.jpg);
+}
+
+.soccer-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-soccer-team.jpg);
+}
+
+.car-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-grid.jpg)
+}
+
+.above-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-from-above.jpg)
+}
+
+.borealis-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-pocket-borealis.jpg)
+}
+
+.curiosity-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-curiosity.jpg)
+}
+
+.fisheye-cont{
+  background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-fisheye.jpg)
+}
+
+.inner-text-cont{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  margin-top: 1rem;
+}
+
+.inner-text{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  position: relative;
+  text-align: left;
+  top: 2.5rem;
+  left:1rem;
+  color: white;
+  text-transform: uppercase;
 }
 
 
