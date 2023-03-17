@@ -43,42 +43,33 @@ body{
   height: 100vh;
 }
 
-.top-grid-cont{
-  position: absolute;
-  display: grid;
-  grid:
-  "nav"
-  "htext";
-  grid-template-rows: 14rem;
+.hero-text{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 13rem;
 }
 
-.hero-text{
-  grid-area: htext;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-text h1{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
+  font-size: 2.5rem;
+  font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
-  margin: 0 auto;
-  width: 80%;
   border: white solid 1px;
   padding: 1rem 2rem;
+  max-width: 650px;
 }
-
 
 /**********************
       Navigation
 ***********************/
 
 .nav-top{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Alata', sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-top: 8rem;
 }
@@ -123,7 +114,6 @@ nav a{
 }
 
 .nav-container{
-  grid-area: nav;
   position: relative;
   padding: 2rem 2rem;
   z-index: 3;
@@ -435,43 +425,77 @@ nav a{
 @media screen and (min-width:500px){
   .hero{
     background-image: url(./images/desktop/image-hero.jpg);
-    width: 100vw;
-    height: 650px;
   } 
 }
 
 
-@media screen and (min-width:700px){
-  .nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+@media screen and (min-width:800px){
+
+  .hero-text{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 2rem;
+    width: 100%;
+    margin-top: 8rem;
   }
   
-  nav{
-    font-family: 'Alata', sans-serif;
-    text-transform: none;
-    font-size: .8rem;
-    font-weight: 400;
-    letter-spacing: 0px;
-    margin-top: 0rem;
-  }
+  .hero-text h1{
+    font-size: 4rem;
+    padding: 2rem 2rem;
+  } 
+  
 
-  nav ul{
-    display: flex;
+/**********************
+      Navigation
+***********************/
+  .nav-image{
+    height: 2rem;
   }
   
-  nav ul li{
-    margin-top: 0rem;
-    padding: 0 .5rem;
-  }
-
   .nav-hamburger{
     display: none;
   }
 
-  nav.hidden{
+  .nav-top{
+    margin-top: 0;
+  }
+
+  .nav-top ul{
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-top ul li{
+    margin-top: 0;
+  }
+
+  .nav-img-container{
     display: block;
   }
 
+  .nav-container{
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+  }
+
+  .nav-top.hidden{
+    display: block;
+  }
+
+  @keyframes nav-fade-in {
+    0%{
+      transform: translatey(-400px);
+    }
+  
+    100%{
+      transform: translatey(0px);
+    }
+    
+  }
+  
 }
