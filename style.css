@@ -44,7 +44,7 @@ body{
 }
 
 .top-grid-cont{
-  position: relative;
+  position: absolute;
   display: grid;
   grid:
   "nav"
@@ -84,8 +84,20 @@ body{
 }
 
 .nav-top ul li{
+  animation: nav-fade-in .5s ease-in;
   list-style: none;
   margin-top: 2rem;
+}
+
+@keyframes nav-fade-in {
+  0%{
+    transform: translateX(-400px);
+  }
+
+  100%{
+    transform: translate(0px);
+  }
+  
 }
 
 nav a{
@@ -181,11 +193,35 @@ nav a{
   background-position: center;
 }
 
+.night-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-night-arcade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.night-cont:hover > *{
+  color: black
+}
+
 .earth-cont{
   background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-deep-earth.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.earth-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-deep-earth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.earth-cont:hover > *{
+  color: black
 }
 
 .soccer-cont{
@@ -195,11 +231,35 @@ nav a{
   background-position: center;
 }
 
+.soccer-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-soccer-team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.soccer-cont:hover > *{
+  color: black
+}
+
 .car-cont{
   background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-grid.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.car-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-grid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.car-cont:hover > *{
+  color: black
 }
 
 .above-cont{
@@ -209,11 +269,35 @@ nav a{
   background-position: center;
 }
 
+.above-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-from-above.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.above-cont:hover > *{
+  color: black
+}
+
 .borealis-cont{
   background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-pocket-borealis.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.borealis-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-pocket-borealis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.borealis-cont:hover > *{
+  color: black
 }
 
 .curiosity-cont{
@@ -223,11 +307,35 @@ nav a{
   background-position: center;
 }
 
+.curiosity-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-curiosity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.curiosity-cont:hover > *{
+  color: black
+}
+
 .fisheye-cont{
   background:linear-gradient( to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ),url(./images/mobile/image-fisheye.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.fisheye-cont:hover{
+  background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/mobile/image-fisheye.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.fisheye-cont:hover > *{
+  color: black
 }
 
 .inner-text-cont{
@@ -238,11 +346,9 @@ nav a{
 .inner-text{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.4rem;
-  font-weight: 100;
-  position: relative;
+  font-weight: 300;
   text-align: left;
-  top: 3.8rem;
-  left:1rem;
+  padding: 3.4rem 0 0 1rem;
   color: white;
   text-transform: uppercase;
 }
@@ -256,6 +362,12 @@ nav a{
   border: 1px solid black;
   padding:  .5rem 3rem;
   margin-top: 2rem;
+}
+
+.second-panel-button:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .footer-end{
