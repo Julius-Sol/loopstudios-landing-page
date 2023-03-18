@@ -424,7 +424,7 @@ nav a{
 
 @media screen and (min-width:500px){
   .hero{
-    background-image: url(./images/desktop/image-hero.jpg);
+    background-image: linear-gradient( to right,rgba(0, 0, 0, .4), rgba(0, 0, 0, .4) ),url(./images/desktop/image-hero.jpg);
   } 
 }
 
@@ -497,5 +497,240 @@ nav a{
     }
     
   }
+
+  .first-panel{
+    max-width: 1200px;
+    margin: 8rem auto 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .first-panel-img{
+    content: url(./images/desktop/image-interactive.jpg);
+    min-width: 500px;
+    width: 100%;
+    height: 500px; 
+  }
+
+  .first-panel-text-cont{
+    transform: translate(-8rem,10rem);
+  }
+
+  .first-panel-text-cont h1{
+    font-size: 3rem;
+  }
+
+  .first-panel-text-cont p{ 
+    font-size: 1.1rem;
+    padding: 0 2rem;
+  }
+
+  .virtual-img-cont{
+    width: 100%;
+  }
+
+  .second-panel{
+    max-width: 1200px;
+    margin: 15rem auto 10rem;
+    width: 80%;
+    display: grid;
+    row-gap: 3rem;
+    column-gap: 2rem;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: 
+      "second-title second-title . second-button"
+      "earth night soccer car"
+      "above bor cur fish"
+    ;
+  }
+
+  .second-panel-title{
+    grid-area: second-title;
+    margin: 0;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .night-cont{
+    grid-area: night;
+    background:url(./images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 500px;
+  }
   
+  .night-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .night-cont:hover > *{
+    color: black
+  }
+  
+  .earth-cont{
+    grid-area: earth;
+    background:url(./images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .earth-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .earth-cont:hover > *{
+    color: black
+  }
+  
+  .soccer-cont{
+    grid-area: soccer;
+    background:url(./images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .soccer-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .soccer-cont:hover > *{
+    color: black
+  }
+  
+  .car-cont{
+    grid-area: car;
+    background:url(./images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .car-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .car-cont:hover > *{
+    color: black
+  }
+  
+  .above-cont{
+    grid-area: above;
+    background:url(./images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .above-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .above-cont:hover > *{
+    color: black
+  }
+  
+  .borealis-cont{
+    grid-area: bor;
+    background:url(./images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .borealis-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .borealis-cont:hover > *{
+    color: black
+  }
+  
+  .curiosity-cont{
+    grid-area: cur;
+    background:url(./images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .curiosity-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .curiosity-cont:hover > *{
+    color: black
+  }
+  
+  .fisheye-cont{
+    grid-area: fish;
+    background:url(./images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .fisheye-cont:hover{
+    background:linear-gradient( to right,rgb(255, 255, 255, .85), rgba(255, 255, 255, .85) ),url(./images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .fisheye-cont:hover > *{
+    color: black
+  }
+
+  .second-panel-button{
+    grid-area: second-button;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    justify-self: end;
+  }
+  
+  .inner-text{
+    padding: 0;
+    transform: translate(3rem,25rem);
+    font-size: 1.5rem;
+  }
 }

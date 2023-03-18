@@ -3,7 +3,6 @@ const mobileClose = document.querySelector(".nav-close");
 const mobileNavBg = document.querySelector(".nav-mobile-background");
 const nav = document.querySelector("nav");
 
-
 hamburger.addEventListener("click", (event)=>{
     hamburger.classList.toggle("hidden");
     mobileClose.classList.toggle("hidden");
